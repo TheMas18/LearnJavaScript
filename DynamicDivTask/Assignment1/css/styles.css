@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main-container{
+  width: 1200px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+ 
+}
+
+.input-groups {
+  height: 50px;
+  padding: 15px;
+
+  background-color: rgba(252, 255, 74, 0.715);
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  
+}
+label {
+  font-size: 20px;
+  margin-left: 30px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  margin-left: 30px;
+  background-color: greenyellow;
+  
+}
+
+
+
+.display-container{
+
+  height:800px;
+  overflow: scroll;
+  position: relative;
+  
+}
+#displayDiv{
+
+  position: absolute;
+  inset: 0;
+  margin:  auto;
+}
+.color {
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: rgb(231, 255, 17);
+  float: left;
+}

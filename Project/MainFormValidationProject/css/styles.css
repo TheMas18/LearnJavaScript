@@ -1,0 +1,591 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+
+}
+::placeholder {
+     color: white; 
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(247 186 33); 
+}
+ 
+::-webkit-scrollbar-thumb {
+   background: black; 
+}
+
+/*bootstrap */
+a {
+  text-decoration: none;
+  color: black;
+}
+.bg-color-gradient-dark-grey {
+  background-color: rgb(43 43 43);
+}
+.margin-left-7{
+  margin-left: 7px;
+}
+.bg-color-gradient-orange{background-image: linear-gradient(rgb(247, 163, 15),rgb(246, 166, 17),rgb(247, 169, 21),rgb(247, 172, 21),rgb(248, 178, 28),rgb(248, 183, 31),rgb(249, 190, 36),rgb(250, 195, 42),rgb(249, 198, 44),rgb(255, 207, 39));}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+.font-size-36 {
+  font-size: 36px;
+}
+.margin-top-15 {
+  margin-top: 15px;
+}
+.overflow-hidden{
+	overflow:hidden;
+}
+.float-left{float: left;}
+
+.float-right{float: right;}
+
+.main-container {
+  width: 990px;
+  padding: 5px;
+  margin: auto;
+  background-color: white;
+  position: relative; 
+}
+
+/*----------Navigation Panel--------------*/
+
+
+.navigation-panel{
+	padding:20px 50px;
+}
+.site-logo{
+	width:230px;
+	 font-weight: 800;
+}
+.phone-information-panel{
+    margin-left: 15px;
+}
+.phone-icon {
+  width: 25px;
+  height: 30px;
+  margin: 7px;
+  background-image: url("../images/phone-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-icon-image {
+   width: 22px;
+  height: 25px;
+  background-image: url("../images/home.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin:auto;
+}
+.phone-number {
+  margin-left: 2px;
+  float: right;
+  color: black;
+}
+
+
+.home-icon-link {
+  width: 40px;
+  padding: 10px;
+
+}
+
+.navigation-list { background-color: black; }
+
+.navigation-list li:hover { box-shadow: inset 0px 0px 5px 1px rgb(247 186 33); }
+
+.navigation-list li a { color: white; }
+
+.navigation-list li:first-child {
+  list-style-type: none;
+  background-color: rgb(43 43 43);
+   width: 40px;
+  height: 25px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.navigation-list li:not(:first-child) {
+  float: left;
+  list-style-type: none;
+  width: 153px;
+  height: 21px;
+  margin-left: 2px;
+  background-color: rgb(43 43 43);
+  text-align: center;
+  padding: 12px 0px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+.navigation-list li:not(:first-child):hover { opacity: 1; }
+
+
+.home-icon {
+  width: 22px;
+  height: 25px;
+  background-image: url("../images/home.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin:auto;
+}
+
+
+
+/*Slider - box - component*/
+.slider-box-component {
+  height: 350px;
+  background-image: url("../images/newbanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.arrows {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(34 34 34);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 45px;
+}
+
+.left {
+  float: left;
+  border-radius: 0px 5px 5px 0px;
+}
+.right {
+  float: right;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.left-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Services Component*/
+
+.service-panels {
+  overflow: hidden;
+}
+
+.services {
+  float: left;
+  overflow: hidden;
+}
+.services:nth-child(3n + 2) {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.service-description {
+  height: 80px;
+  overflow: auto;
+}
+.service-title {
+  width: 290px;
+  font-size: 30px;
+  padding: 15px 0px;
+  margin: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+.description {
+  width: 280px;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  line-height: 25px;
+}
+.description p span {
+  opacity: 0.7;
+}
+
+.more-details-button {
+  width: 185px;
+  height: 50px;
+  background-color: rgb(233 233 233);
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.service-detail-button {
+  text-align: center;
+}
+
+/*Article and Testiomonial Section*/
+
+.article {
+  width: 620px;
+  float: left;
+  padding: 10px 20px;
+}
+
+.article-header-text {
+  color: orange;
+  font-size: 47px;
+  font-weight: 900;
+}
+.article-text-component {
+  height: 194px;
+  overflow-x: auto;
+}
+.article-content p {
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.article-content p:not(:first-child) {
+  margin-top: 12px;
+}
+
+.article-content p:not(:first-child) a {
+  font-weight: 550;
+  font-size: 14px;
+  opacity: 0.82;
+}
+
+.testimonials-components {
+  float: right;
+  width: 310px;
+  height: 244px;
+  padding: 12px 5px;
+}
+
+.testimonials-component-header {
+  font-size: 35px;
+}
+.testimonials-container {
+  width: 310px;
+  height: 210px;
+  overflow-x: auto;
+}
+.testimonials-container-component {
+  width: 310px;
+}
+
+.tm-image-design {
+  width: 100px;
+  height: 90px;
+  float: left;
+}
+.testimonials-component-image1 {
+  background-image: url("../images/logo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonials-component-image2 {
+  background-image: url("../images/logo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+.testimonials-component-information {
+  padding: 0px 11px;
+  width: 188px;
+}
+.testimonials-component-details {
+  width: 190px;
+  height: 90px;
+  float: left;
+}
+
+.testimonials-component-description {
+  margin-top: 5px;
+  line-height: 22px;
+}
+
+/*---------Footer Component----------*/
+
+footer {
+  padding:20px;
+  text-align:center;
+}
+.footer-text-panel{
+	padding:15px;
+}
+
+.footer-text-panel p {
+  display:inline-block;
+  font-size: 18px;
+  color: white;
+}
+.footer-text-panel span {
+  color: orange;
+}
+
+.footer-social-media-icons  {
+	display:inline-block;
+}
+
+.social-media-icons-design{
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(233 233 233);
+}
+.footer-social-media-icons a{
+	margin:0px 5px;
+	
+}
+.icon-layout{
+  width: 40px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.facebook-icon { background-image: url("../images/fb-logo.png"); }
+
+.x-icon {	background-image: url("../images/twitter.png");	}
+
+.linkedin-icon {	background-image: url("../images/linkedin.png");  }
+ 
+.loginoption-icon{background-image: url("../images/gmail.png");}
+/*---------------Popup screen-----------------------*/
+
+#popup-component-screen{
+  display: none; 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  inset:0;
+  
+}
+/*----For signup PopUp-----*/
+
+.register-component{
+  display: none;
+  width: 340px;
+  height: 600px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 20px 20px;
+  overflow: auto;
+  max-height:95%;
+  background-color: black;
+  box-shadow: 0px 0px 5px 1px rgb(247 186 33);
+}
+
+fieldset {
+  width: 320px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  color: white;
+  
+  border-color: rgb(255, 206, 8);
+  
+}
+textarea {
+  min-width: 310px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  max-width: 300px;
+    height: 215px;
+    min-height: 80px;
+    color: white;
+    
+}
+
+
+select {
+  width: 340px;
+  height: 45px;
+  /* border: none; */
+  border-radius: 15px;
+  background-color:black;
+  border-color: rgb(255, 206, 8);
+  color: white;
+  margin-top: 10px;
+  outline: none;
+  position: relative;
+}
+
+
+
+
+/*----For login PopUp-----*/
+.login-component{
+  display: none;
+  width: 340px;
+  height: 355px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 20px 20px;
+  overflow-y: auto;
+  background-color: black;
+  box-shadow: 0px 0px 5px 1px rgb(247 186 33);
+}
+
+
+.close-btn-icon-design
+{
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/cross.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+.form-header-text {
+  text-align: center;
+  font-size: 31px;
+  margin:10px 0px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+.input-groups {
+  width: 340px;
+  /* height: 80px; */
+  margin-top: 10px;
+  text-align: Center;
+  position: relative;
+  /* background-color: red; */
+  text-align:left;
+  color: white;
+}
+.input-design {
+  width: 310px;
+  height: 35px;
+  border: 1px solid ;
+  border-color: rgb(255, 206, 8);
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px 15px;
+  outline: none;
+  margin-top: 8px;
+  color: white;
+}
+.input-groups label{
+  font-size: 15px;
+  margin-left: 5px;
+  color: white;
+} 
+.LoginOptions{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.LoginOptions-panel{
+  width: 260px;
+  margin: 10px  auto 0px;
+}
+.LoginOptions-panel h3{
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  
+}
+
+.button-design{
+  width: 340px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: rgb(43 43 43);
+  color: white;
+}
+.button-design:hover {
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 5px 1px rgb(247 186 33);
+}
+
+.create-account-component {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+.create-account-component p a {
+  color: white;
+}
+/*-----------Confirm logout button---------------------*/
+.confirm-logout-popup{
+  display: none;
+  width: 300px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 20px 20px;
+    height: 90px;
+  text-align:center;
+}
+.confirm-logout-button{
+  width: 130px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: rgb(43 43 43);
+  color: white;
+}
+.confirm-logout-button:hover {
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 5px 1px rgb(247 186 33);
+}
+
+
+.error-message{
+  /* height: 40px; */
+  font-size: 20px;
+  color: red;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+
+th, td {
+  padding: 15px;
+}
+.table-contents{
+  overflow: scroll;
+
+}

@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 810px;
+    padding: 20px 20px;
+    margin: auto;
+}
+
+.left {
+    padding: 2.5px;
+    float: left;
+}
+
+.right {
+    padding: 5px;
+    float: left;
+    background-color: black;
+}
+
+.msg {
+    display: none;
+    padding: 10px 30px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.form-contents {
+    width: 265px;
+    padding: 5px 20px;
+    background-color: #149f6a;
+    margin: 152.5px auto 0px auto;
+}
+
+#database {
+    width: 460px;
+    height: 590px;
+    padding: 0px 15px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#database ul {
+    margin-top: 10px;
+    margin-left: 15px;
+    list-style-type: none;
+    line-height: 35px;
+    font-size: 25px;
+}
+
+input {
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.buttons {
+    height: 40px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#Add {
+    width: 105px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#display {
+    width: 105px;
+    height: 40px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

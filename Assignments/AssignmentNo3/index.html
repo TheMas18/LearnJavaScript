@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HandyMan</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<div class="main-container">
+		<h3>Registration Form</h3>
+		<form>
+			<div class="input-grp">
+				<input class="input-elements-design" type="text" name="fname" id="fname" placeholder="Enter First Name" autocomplete="off" required />
+				<span class="tool">
+					<div class="validation-symbol" id="setError"></div>
+					<div class="tooltiptext">Length should be 8<br>Special Characters are not Allowed <br>Spaces are not
+						allowed<br></div>
+				</span>
+			</div>
+			<div class="input-grp">
+				<input class="input-elements-design" type="text" name="lname" id="lname" placeholder="Enter Last Name" autocomplete="off" required />
+				<span class="tool">
+					<div class="validation-symbol" id="setError"></div>
+					<div class="tooltiptext">Length should be 8<br>Special Characters are not Allowed <br>Spaces are not
+						allowed<br></div>
+				</span>
+			</div>
+			<div class="input-grp">
+				<input class="input-elements-design"  type="text" name="age" id="age" placeholder="Enter Age" autocomplete="off" required />
+				<span class="tool">
+					<div class="validation-symbol" id="setError"></div>
+					<div class="tooltiptext">Age should be between 18 to 80.</div>
+				</span>
+			</div>
+			<div class="input-grp">
+				<input class="input-elements-design"  type="text" name="Date Of Birth" id="dob" placeholder="Enter Date Of Birth (dd/mm/yyyy)"
+					autocomplete="off" required />
+				<span class="tool">
+					<div class="validation-symbol" id="setError"></div>
+					<div class="tooltiptext">Format should be dd/mm/yyyy<br>Alphabets are not allowed</div>
+				</span>
+			</div>
+
+			<div class="input-grp">
+				<textarea  class="input-elements-design"  id="address" name="address" placeholder="Enter your address"></textarea>
+				<span class="tool">
+					<div name="vs-txtarea" id="setError"></div>
+					<div class="tooltiptext">Length should be 25<br>Special Characters are not Allowed</div>
+				</span>
+			</div>
+			<div class="input-grp">
+				<select  name="city" id="city">
+					<option value="mumbai">Select City</option>
+					<option value="mumbai">mumbai</option>
+					<option value="Jaipur">Jaipur</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Kolkata">Kolkata</option>
+				</select>
+			</div>
+			<div class="input-grp-radio">
+				<div class="radio-btn">
+					<p>Select Gender</p>
+					<input type="radio" id="gender" name="gender" value="male" />
+					<label for="male" class="label-size">Male</label>
+
+					<input type="radio" id="gender" name="gender" value="female" />
+					<label for="female" class="label-size">Female</label>
+
+					<input type="radio" id="gender" name="gender" value="other" />
+					<label for="other" class="label-size">Other</label>
+				</div>
+				<div class="radio-btn">
+					<div class="inpt-grp checkbox-course">
+						<p>Select Courses</p>
+						<input type="checkbox" id="courses" name="java" value="java" />
+						<label for="skills" class="label-size">Java</label>
+
+						<input type="checkbox" id="courses" name="sql" value="sql" />
+						<label for="skills" class="label-size">Sql</label>
+
+						<input type="checkbox" id="courses" name="javascript" value="javascript" />
+						<label for="skills" class="label-size">javascript</label>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			
+			<button id="submit">Submit</button>
+		</form>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+	background-color:black;
+}
+.main-container {
+  width: 530px;
+  height:679px;
+  box-shadow: 0px 0px 8px 2px white;
+  border-radius: 15px;
+  padding: 10px 5px;
+  background-color: black;
+  position:absolute;
+  inset:0;
+  margin: auto;
+  
+}
+
+.main-container h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: rgb(187 255 255);
+}
+
+.form {
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.input-grp {
+  width: 510px;
+  height: 60px;
+  padding: 5px 10px;
+  position: relative;
+
+}
+
+#city{
+  background-color: transparent;
+  box-shadow: inset 0px 0px 7px 3px #86f9ff;
+  color: white;
+  width: 510px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 20px;
+  outline: none;
+}
+ option{
+  background-color: black;
+}
+input::placeholder , textarea::placeholder{
+	color:white;
+	opacity:0.8;
+}
+.input-elements-design {
+  background-color: transparent;
+  color: white;
+  width: 480px;
+  height: 50px;
+  border: none;
+  box-shadow:inset 0px 0px 7px 3px #86f9ff;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+
+
+.input-grp-radio {
+  width: 510px;
+  padding: 5px 10px;color: white;
+}
+
+.radio-btn {
+  width: 241px;
+  float: left;
+  padding: 7px;
+}
+
+.radio-btn input {
+  width: 20px;
+  height: 14px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color:  rgb(187 255 255);
+}
+
+
+
+.label-size {
+  font-size: 19px;
+
+}
+
+.input-grp select {
+  width: 250px;
+  height: 25px;
+
+}
+
+
+
+.valid {
+  background-image: url("../images/done.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.error {
+  background-image: url("../images/remove.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#submit {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  margin: 20px 155px 10px 155px;
+  background-color: transparent;
+  color: rgb(137 255 242);
+  border: 2px solid rgb(137 255 242);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+.tool .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 1;
+  background-color: black;
+  border:1px solid rgb(137 255 242);
+
+  color: rgb(137 255 242);
+  width: 280px;
+  padding: 5px;
+}
+
+.tool:hover .tooltiptext {
+  visibility: visible;
+}

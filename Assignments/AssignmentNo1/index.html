@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="left">
+			<div class="form-contents">
+				<input type="number" id="id" placeholder="Enter ID" />
+				<input type="text" id="name" placeholder="Enter Name" />
+				<input type="number" id="age" placeholder="Enter Age" />
+				<div class="buttons">
+					<button id="Add" onclick="addPerson()">Add</button>
+					<button id="display" onclick="displayData()">Display</button>
+				</div>
+			</div>
+			<div class="msg">
+				<p>Data Has been Added!..</p>
+			</div>
+		</div>
+		<div class="right">
+			<div id="database"></div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

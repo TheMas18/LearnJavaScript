@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+
+		}
+
+		:root{
+			--navColor:black;
+			--navLogo:url("assets/images/naaptol-logo.png");
+			--list-font-color:white; 
+			--nav-font-size:1.2rem;
+			--slide-show-img:url("assets/images/bg1.jpg");
+			--left-arrow:url("assets/images/left.png");
+		}
+		.clear{
+			clear:both;
+		}
+		body{
+			width:100vw;
+			min-height:100vh;
+			height:100%;
+		}
+
+		nav{
+		
+			background-color:var(--navColor); 
+			padding:5px; 
+		}
+		.nav-logo{
+			width:30%;
+			height:5vmin;
+			float:left;
+			z-index:-1;
+			background-image:var(--navLogo);
+			background-repeat: no-repeat;  
+			background-size: contain;
+
+		}
+		
+		.nav-list{
+			width:69%;
+			height:4vmin;
+			float:left;
+			padding:0.5%;
+			margin: 0;
+			display:flex;
+			flex-direction:row-reverse;
+			justify-content:right;
+			align-items:center;
+		}
+
+		.nav-list ul {
+			list-style-type:none;
+			display:flex;
+			flex-direction:row-reverse;
+			justify-content:right;
+			gap:1.5rem;
+		}
+		
+		.nav-list  a{
+			font-size:var(--nav-font-size);
+			text-decoration:none;
+			color:var(--list-font-color);
+		}
+		.navbar-panel{
+			padding:0.5%;
+			background-color:var(--navColor); 
+		}
+		.menu-btn{
+			width:4vmin;
+			height:4vmin;
+			float:left;
+			margin-left:0.7%;
+		}
+		.fa-bars{
+			color:white;
+			font-size:2.55rem;
+		}
+		.fa-search{
+			color:white;
+			font-size:2rem;
+			padding-top:3px;
+			
+		}
+		.search-btn{
+			width:4vmin;
+			height:4vmin;
+			float:left;
+			margin-left:2%;
+		}
+
+		.search{
+			width:40vmin;
+			height:3.74vmin;
+			float:left;
+			border:2px solid white;
+			background-color:black;
+			color:white;
+			border-radius:15px;
+
+		}
+		.news{
+			float:left;
+		
+		}
+
+		.show-panel{
+			width:99%;
+			height:54vmin;
+			background-color:black;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			padding:0.5%;
+			position:relative;
+		}
+
+		.slideshow{
+			width:99%;
+			height:53vmin;
+			background-image:var(--slide-show-img);
+			background-repeat: no-repeat;  
+			background-size: 100% 100%;
+			box-shadow:0px 0px 5px white;
+		}
+		.left-Arrow{
+			position:absolute;
+			top:45%;
+			left:0;
+			width:5vmin;
+			height:5vmin;
+			background-image:var(--left-arrow);
+			background-repeat: no-repeat;  
+			background-size: 100% 100%;
+			color:white;
+			border:2px solid white;
+			
+		}
+		.right-Arrow{
+			position:absolute;
+			top:45%;
+			right:0;
+			width:5vmin;
+			height:5vmin;
+			background-color:blue;
+			border:2px solid white;
+		}
+	</style>
+</head>
+  <body>
+	<nav>
+		<div class="nav-logo"></div>
+		<div class="nav-list">
+				<ul>
+					<li><a href="">Profile</a></li>
+					<li><a href="">Cart</a></li>
+					<li><a href="">SignUp / Log In</a></li>
+					<li><a href="">contact Us</a></li>
+					<li><a href="">Download App</a></li>
+				</ul>
+		</div>
+		<div class="clear"></div>
+	</nav>
+	<div class="navbar-panel">
+			<div class="menu-btn"><i class="fa fa-bars"></i></div>
+			<div class="search-btn"><i class="fa fa-search"></i></div>
+			<input class="search" type="text">
+			<div class="news"></div>
+			<div class="clear"></div>
+	</div>
+	<div class="show-panel">
+		<div class="left-Arrow"></div>
+		<div class="slideshow">
+		<div class="right-Arrow"></div>
+		
+	</div>
+		
+	
+	</div>
+  </body>
+  <script>
+			let leftArrow=document.querySelector(".left-Arrow");
+			let rightArrow=document.querySelector(".right-Arrow");
+			let slideshow=document.querySelector(".slideshow");
+
+			
+			async function showImages(){
+				await setTimeout(function(){
+				slideshow.style.setProperty('--slide-show-img', `url("assets/images/bg1.jpg")`);
+				},3000);
+			
+				await setTimeout(function(){
+				slideshow.style.setProperty('--slide-show-img', `url("assets/images/bg2.jpg")`);
+				},5000);
+				await setTimeout(function(){
+					slideshow.style.setProperty('--slide-show-img', `url("assets/images/bg3.jpg")`);
+				},7000);
+				await setTimeout(function(){
+					slideshow.style.setProperty('--slide-show-img', `url("assets/images/bg4.jpg")`);
+				},9000);
+		
+				 await setTimeout(showImages,3000);
+			}
+			
+			showImages();
+
+  </script>
+</html>
